@@ -1,0 +1,281 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+p {
+    line-height: 1.2;
+    font-family: "Roboto", sans-serif;
+}
+h2, h3 {
+    font-size: 40px;
+    font-family: "FlamanteCairo", serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+}
+
+header {
+    width: 100%;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+    z-index: 999; /* Чтобы тень снизу не перекрывалась */
+    position: relative; /*  */
+    padding: 0 29px;
+    background: #fff;
+    -webkit-box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header-container .nav ul {
+    padding: 0; /* внутрений отступ */
+    margin: 0; /* внешний отступ */
+}
+.header-container .nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 30px;
+}
+.header-container .nav ul li a {
+    display: inline-block;
+    padding: 18px 0;
+    font-size: 16px;
+    font-family: "AmazingInfographic", serif;
+    text-transform: uppercase;
+}
+.header-container .nav ul li a:hover {
+    -webkit-box-shadow: 0 7px 0 -1px #b28c72;
+    -moz-box-shadow: 0 7px 0 -1px #b28c72;
+    box-shadow: 0 7px 0 -1px #b28c72;
+}
+
+main {
+    min-height: 100vh;
+}
+
+main .slider-container {
+    height: 600px;
+    border-bottom: 1px solid #fff;
+}
+main .slider-container .slider {
+    background: #8b5e3f;
+}
+main .slider-container .slider .slider-item {
+    background: transparent center / cover;
+    position: relative;
+    height: 599px;
+}
+main .slider-container .slider .slider-item.slide1,
+main .slider-container .slider .slider-item.slide3 {
+    background-image: url("../img/photo1.png");
+}
+main .slider-container .slider .slider-item.slide2,
+main .slider-container .slider .slider-item.slide4 {
+    background-image: url("../img/photo2.png");
+}
+main .slider-container .slider .slider-item .info {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    max-width: 45%;
+    font-size: 50px;
+    font-family: "AmazingInfographic", serif;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+    text-shadow: 1px 1px 0 #111;
+    position: absolute;
+    left: 270px;
+}
+.slick-arrow {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    z-index: 999;
+}
+.slick-next {
+    right: 20px;
+}
+.slick-prev {
+    left: 20px;
+}
+
+main .content .about {
+    display: flex; /* Позволяет позиционировать элементы внутри блока */
+    flex-direction: column;
+    align-items: center;
+    /**/
+    background: #376179 url("../img/pattern.png") center / cover;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+main .content .about h2 {
+    padding: 60px 25px 45px 25px;
+    margin: 0 0 90px 0;
+    border-bottom: 4px solid #b28c72;
+    color: rgb(223, 223, 223);
+}
+main .content .about .text {
+    width: 66.6%;
+    padding: 0 60px;
+    text-align: justify; /* Выравнивание текста по ширине */
+}
+main .content .about .text p {
+    margin: 0 0 16px 0;
+}
+main .content .about button {
+    margin: 60px;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #b28c72;
+    border-radius: 8px;
+    background: transparent;
+}
+
+main .content .areas {
+    padding: 120px 0;
+    background: #376179 url("../img/bg.png") repeat-y fixed;
+}
+main .content .areas .areas-container {
+    /* Позволяет позиционировать элементы внутри блока */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /**/
+    background: #fff;
+}
+main .content .areas .areas-container h2 {
+    padding: 60px 25px 45px 25px;
+    margin: 0 0 90px 0;
+    border-bottom: 4px solid #b28c72;
+}
+main .content .areas .areas-container .item-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 66.6%;
+}
+main .content .areas .areas-container .item-container .item {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+    margin-bottom: 140px;
+}
+main .content .areas .areas-container .item-container .item .item-icon {
+    display: flex;
+    align-items: center;
+    height: 160px;
+}
+main .content .areas .areas-container .item-container .item h3 {
+    font-size: 24px;
+    color: rgb(139, 94, 63);
+    display: inline-block;
+    padding: 15px;
+    margin: 20px 0;
+    border-bottom: 2px solid #376179;
+}
+
+
+footer .content .contacts {
+    background: #f8f0ea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .content .contacts h2 {
+    padding: 60px 25px 45px 25px;
+    margin: 0 0 90px 0;
+    border-bottom: 4px solid #5585a1;
+}
+footer .content .contacts .contact-container {
+    width: 66.6%;
+    display: flex;
+}
+footer .content .contacts .contact-container .req,
+footer .content .contacts .contact-container .form {
+    width: 50%;
+    padding: 20px;
+}
+footer .content .contacts .contact-container .req h3 {
+    margin: 0;
+    padding: 0 0 35px 0;
+    display: inline-block;
+    border-bottom: 2px solid #d8b094;
+    font-size: 28px;
+    text-align: left;
+    text-transform: none;
+}
+footer .content .contacts .contact-container .req ol {
+    margin: 0;
+    padding-left: 70px;
+}
+footer .content .contacts .contact-container .req ol li {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 50px 12px;
+    font-size: 20px;
+}
+footer .content .contacts .contact-container .req ol li:before {
+    position: absolute;
+    left: -60px;
+}
+footer .content .contacts .contact-container .req ol li:nth-of-type(1):before {
+    content: url("../img/contact-icon1.png");
+}
+footer .content .contacts .contact-container .req ol li:nth-of-type(2):before {
+    content: url("../img/contact-icon2.png");
+}
+footer .content .contacts .contact-container .req ol li:nth-of-type(3):before {
+    content: url("../img/contact-icon3.png");
+}
+
+footer .content .contacts .contact-container .form input,
+footer .content .contacts .contact-container .form textarea {
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #ceb298;
+    background: #fff;
+}
+footer .content .contacts .contact-container .form input[type=submit] {
+    float: right;
+    width: auto;
+    font-family: "Roboto", sans-serif;
+    background: #376179;
+    border-color: #376179;
+    padding: 10px 60px;
+    color: #f8f0ea;
+}
+
+footer .content .map {
+    height: 325px;
+    background: url("../img/map.png") center / cover;
+}
+
+footer .content .pp {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: rgb(198, 198, 198);
+    background: #376179;
+}
+
+footer .content .pp a {
+    display: inline-block;
+    margin: 10px;
+}
